@@ -50,7 +50,7 @@ void ABaseAI::ShotAI()
 
 	x = FMath::RandRange(-curX, curX);
 	y = FMath::RandRange(-curY, curY);
-
+	
 	FVector start = loc;
 	FVector end = start + ((rot + FRotator(x, y, 0)).Vector() * 5000);
 	FCollisionQueryParams traceParams;
